@@ -99,19 +99,6 @@ public class ItcljTopology {
                     .noneGrouping(ItcljTopologyDef.MERGE_BOLT_NAME);
         }
 
-        /*
-        boolean kryoEnable = JStormUtils.parseBoolean(conf.get("kryo.enable"), false);
-        if (kryoEnable) {
-            System.out.println("Use Kryo ");
-            boolean useJavaSer = JStormUtils.parseBoolean(conf.get("fall.back.on.java.serialization"), true);
-
-            Config.setFallBackOnJavaSerialization(conf, useJavaSer);
-
-            Config.registerSerialization(conf, TradeCustomer.class, TradeCustomerSerializer.class);
-            Config.registerSerialization(conf, Pair.class, PairSerializer.class);
-        }
-        */
-
         // conf.put(Config.TOPOLOGY_DEBUG, false);
         // conf.put(ConfigExtension.TOPOLOGY_DEBUG_RECV_TUPLE, false);
         // conf.put(Config.STORM_LOCAL_MODE_ZMQ, false);
